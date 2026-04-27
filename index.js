@@ -64,7 +64,9 @@ export function getFirstLast(array) {
  * sharesFirstLetter("cat", "dog"); // false
  */
 export function sharesFirstLetter(str1, str2) {
-  // TODO
+  if (str1 === "" || str2 === "") return false;
+
+  return str1[0] === str2[0];
 }
 
 /**
