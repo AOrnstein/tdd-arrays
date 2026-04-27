@@ -106,7 +106,17 @@ export function quintuple(numbers) {
  * pluralize([]); // []
  */
 export function pluralize(words) {
-  // TODO
+  const result = [];
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    // FIXME: test does not describe behavior for empty strings
+    if (word.endsWith("s")) {
+      result[i] = word += "es";
+    } else {
+      result[i] = word += "s";
+    }
+  }
+  return result;
 }
 
 /**
