@@ -111,9 +111,9 @@ export function pluralize(words) {
     const word = words[i];
     // FIXME: test does not describe behavior for empty strings
     if (word.endsWith("s")) {
-      result[i] = word += "es";
+      result[i] = word + "es";
     } else {
-      result[i] = word += "s";
+      result[i] = word + "s";
     }
   }
   return result;
