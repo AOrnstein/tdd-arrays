@@ -10,7 +10,8 @@
  * getFirst([true,false,true]); // true
  */
 export function getFirst(array) {
-  // TODO
+  if (array.length < 1) return undefined;
+  return array[0];
 }
 
 /**
