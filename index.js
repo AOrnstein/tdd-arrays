@@ -10,7 +10,7 @@
  * getFirst([true,false,true]); // true
  */
 export function getFirst(array) {
-  if (array.length < 1) return undefined;
+  if (array.length === 0) return undefined;
   return array[0];
 }
 
@@ -26,7 +26,8 @@ export function getFirst(array) {
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
-  // TODO
+  if (array.length === 0) return undefined;
+  return array[array.length - 1];
 }
 
 /**
