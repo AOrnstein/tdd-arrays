@@ -182,7 +182,12 @@ export function getLongestWord(sentence) {
  * findSong([], "Midnight Drive"); // -1
  */
 export function findSong(playlist, song) {
-  // TODO
+  for (let i = 0; i < playlist.length; i++) {
+    if (song === playlist[i]) {
+      return i;
+    }
+  }
+  return -1;
 }
 
 /**
